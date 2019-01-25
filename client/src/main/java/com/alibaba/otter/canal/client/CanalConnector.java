@@ -21,7 +21,6 @@ public interface CanalConnector {
      * 
      * @throws CanalClientException
      */
-    @PostConstruct
     void connect() throws CanalClientException;
 
     /**
