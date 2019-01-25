@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import com.alibaba.otter.canal.protocol.Message;
 import com.alibaba.otter.canal.protocol.exception.CanalClientException;
 
+import javax.annotation.PostConstruct;
+
 /**
  * canal数据操作客户端
  * 
@@ -19,6 +21,7 @@ public interface CanalConnector {
      * 
      * @throws CanalClientException
      */
+    @PostConstruct
     void connect() throws CanalClientException;
 
     /**
